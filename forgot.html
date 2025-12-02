@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Forgot Password</h2>
+        <form onsubmit="sendResetLink(event)">
+            <input type="text" id="email" placeholder="Enter your email" required>
+            <div class="message" id="message"></div>
+            <button type="submit">Send Reset Link</button>
+        </form>
+        <a id="reset-link" href="reset.html" style="display:none;">Click here to reset password</a>
+        <a href="index.html">Back to Login</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
